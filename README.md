@@ -2,7 +2,7 @@
 My second html/css page
 
 ### The story behind
-This form was developed as my second project to gain the [FreeCodeCamp Responsive Web Design certification](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page).
+This form was developed as my second project to gain the [FreeCodeCamp Responsive Web Design certification](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form).
 Those were the <b>user stories</b>: 
 
 ### User Stories:
