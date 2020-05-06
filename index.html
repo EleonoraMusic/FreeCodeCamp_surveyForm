@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://codepen.io/freeCodeCamp/pen/MJjpwO"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+
+  <body>
+    <div class="container">
+      <!-- Introduzione: titolo e sottotitolo -->
+    <header>
+      <h1 id="title">PlasticFreeWorld <br/>survey form</h1>
+      <p id="description">Thanks for taking time to improve our offer!</p>
+    </header>
+
+    <!-- modulo sondaggio -->
+
+    <form id="survey-form">
+
+    <!-- nome, email e età (stesso genere di input. Tutti "required" tranne l'età)-->
+
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Insert name and family name"
+          required
+        />
+    </div>
+
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Insert your email"
+          required
+        />
+    </div>
+
+  <div class="form-group">
+    <label id="number-label" for="number">Age <span class="optional">(optional)</span></label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        class="form-control"
+        placeholder="Select"
+        min="10"
+        max="150"
+      />
+  </div>
+
+  <!--Dropdown! "p" per spiegare, "select" per generare il tipo di casella e ci metto il "required" dentro, "option" con un value -->
+
+  <div class="form-group">
+        <p>How did you first get in touch with PlasticFreeWorld?</p>
+        <select id="dropdown" name="media" class="form-control" required>
+          <option disabled selected value>Select a media</option>
+          <option value="websites">Websites</option>
+          <option value="social media">Social media</option>
+          <option value="youtube">YouTube channels</option>
+          <option value="friends">Friends advices</option>
+          <option value="adv">Non-digital advertising</option>
+          <option value="dig-adv">Digital advertising</option>
+        </select>
+      </div>
+
+  <!-- Radio buttons! "p" per introdurre, label per avvolgere i vari bottoni e scrivere il valore del bottone.
+  Input per generare i bottoni. Type= "radio" (dentro input) per generare la tipologia. Attributi: name, value, type, class (opz)-->
+
+  <div class="form-group">
+    <p>Would you recommed PlasticFreeWorld to a friend?</p>
+    <label>
+      <input
+        name="ux"
+        value="yes"
+        type="radio"
+        class="input-radio"
+        checked
+      />Absolutely</label><br/>
+
+    <label>
+      <input
+        name="ux"
+        value="not-sure"
+        type="radio"
+        class="input-radio"
+      />Not sure</label><br/>
+
+    <label>
+      <input
+        name="ux"
+        value="no"
+        type="radio"
+        class="input-radio"
+      />No</label><br/>
+  </div>
+
+<!--Checkbox! Uguale ai radio = "p" per introdurre, label per dichiarare il valore e avvolgere input che ha come proprietà
+name, value, type e class-->
+
+  <div class="form-group">
+    <p>What products are you most interested in? <br/><span class="option">(You can select more options)</span></p>
+    <label>
+      <input
+        name="products"
+        value="cosmetics"
+        type="checkbox"
+        class="input-checkbox"
+        checked
+      />Cosmetics</label>
+    <label><br/>
+
+      <input
+        name="products"
+        value="cleaning"
+        type="checkbox"
+        class="input-checkbox"
+      />Household cleaning products</label><br/>
+
+    <label>
+      <input
+        name="products"
+        value="food"
+        type="checkbox"
+        class="input-checkbox"
+      />Foodstuff</label><br/>
+
+    <label>
+      <input
+        name="products"
+        value="furniture"
+        type="checkbox"
+        class="input-checkbox"
+      />Furniture and home accessories</label><br/>
+
+    <label>
+      <input
+        name="products"
+        value="textile"
+        type="checkbox"
+        class="input-checkbox"
+      />Clothing and textiles</label><br/>
+
+    </div>
+
+<!--Casella per testo libero: "p" per introdurre + tag "<textarea></textarea>" con proprietà opzionali: id, class, name, placeholder -->
+
+    <div class="form-group">
+      <p>Which products would you like to see transformed into Plastic Free soon?</p>
+      <textarea
+          id="suggestion"
+          class="input-textarea"
+          name="suggestion"
+          placeholder="Make a wish for a greener world... :)"
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <p>Do you have any suggestions or comments about our service? Tell us what you think!</p>
+      <textarea
+          id="suggestion"
+          class="input-textarea"
+          name="suggestion"
+          placeholder="Tell us your opinion..."
+      ></textarea>
+    </div>
+
+    <button type="submit" name="button" id="submit" class="submit-button">Submit!</button>
+
+      </form>
+    </div>
+    <footer>&copy Eleonora2020</footer>
+  </body>
+</html>

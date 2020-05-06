@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+  --color-lightgreen: 96, 147, 93;
+  --color-white: #bde0cd;
+  --color-darkgreen: #3e7c76;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-image: linear-gradient(
+      45deg,
+      rgba(62, 124, 118, 0.8),
+      rgba(104, 162, 157, 0.7)
+    ),
+    url(https://previews.123rf.com/images/seamartini/seamartini1409/seamartini140900163/31443254-estate-o-primavera-fogliame-albero-verde-foglie-pattern-di-sfondo-senza-soluzione-di-continuit%C3%A0-per-ca.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*background-position: center; essendo un pattern questa proprietà non è necessaria*/
+}
+
+body {
+  font-family: 'Pangolin', cursive;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-white);
+  line-height: normal;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  width: 70%;
+  background: rgba(var(--color-lightgreen), 0.9);
+  margin: 5rem auto 2rem auto;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+h1 {
+  font-weight: 400;
+  line-height: 3rem;
+  margin: 1rem auto;
+  text-shadow: 0.2rem 0.2rem 0.1rem var(--color-darkgreen);
+}
+
+.form-group {
+  margin:2rem auto;
+}
+
+.optional {
+  font-size: smaller;
+}
+
+.form-control {
+  display: block;
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0.5rem auto;
+  height: 2.2rem;
+  border-radius: 0.5rem;
+  border-style: hidden;
+  font-family: 'Lato', sans-serif;
+  font-stretch: expanded;
+}
+
+.form-control:focus {
+  border-color: var(--color-darkgreen);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem var(--color-darkgreen);
+}
+
+p {
+  margin: 0.5rem auto;
+}
+
+label {
+
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 1rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+textarea {
+  min-height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 1rem;
+  font-family: Lato, sans-serif;
+  margin: 0px;
+  resize: vertical;
+  height: 100px;
+}
+
+textarea:focus {
+  border-color: var(--color-darkgreen);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem var(--color-darkgreen);
+}
+
+button {
+  border-style: none;
+  border-image-outset: none;
+  width: 100%;
+  height: 3rem;
+  display: block;
+  margin: auto;
+  background-color: var(--color-darkgreen);
+  color: var(--color-white);
+  font-family: inherit;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+button:hover {
+  box-shadow: 0 0 1.2rem;
+}
+
+button:focus {
+  outline-style: none;
+  background-color: #32665f
+}
+
+footer {
+  font-family: 'Lato', sans-serif;
+  font-size:1.06rem;
+  text-align:center;
+  margin: 1rem auto;
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 300px;
+    margin: 1rem auto;
+  }
+  header {
+    margin: 1rem auto;
+  }
+  h1 {
+   font-size: 1.5rem;
+   font-weight: lighter;
+   line-height: 1.4rem;
+  }
+  label,
+  p {
+    font-size: 1rem;
+  }
+  .input-radio,
+  .input-checkbox {
+  display: inline-block;
+  margin-right: 0.5rem;
+  min-height: 1rem;
+  min-width: 1rem;
+}
+}
